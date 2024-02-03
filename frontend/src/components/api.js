@@ -1,6 +1,6 @@
 //create room
 export const createRoomAPI = async (author) => {
-  const response = await fetch(`https://stealth-backend.onrender.comhttps://stealth-backend.onrender.com//rooms`, {
+  const response = await fetch(`https://stealth-backend.onrender.com/rooms`, {
     method: "POST",
     headers: {
       Accept: "application/json",
