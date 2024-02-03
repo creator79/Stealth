@@ -1,163 +1,134 @@
-.meeting-details
-{
-    color:white;
-    font-size: 18px;
+.meeting-details {
+  color: white;
+  font-size: 18px;
 }
 
-.meeting-details button  i
-{
-    font-size: 25px;
-    margin-left: 20px;
+.meeting-details button i {
+  font-size: 25px;
+  margin-left: 20px;
 }
 
-.meeting-button
-{
-    border: 0;
-    font-size: 18px;
-    padding: 15px;
-    width: 100%;
-    background: none;
-    height: 100%;
-    color: white;
+.meeting-button {
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  width: 100%;
+  background: none;
+  height: 100%;
+  color: white;
 }
 
-.meeting-hide
-{
+.meeting-hide {
+  display: none;
+}
+.meeting-button:hover {
+  background: rgb(30, 30, 30);
+  cursor: pointer;
+}
+
+.meeting-expand {
+  position: fixed;
+  bottom: 85px;
+  background-color: royalblue;
+  padding: 25px;
+  margin-left: -100px;
+}
+.meeting-head {
+  font-size: 25px;
+  font-weight: 600;
+}
+.meeting-id {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.meeting-id span {
+  font-weight: 700;
+}
+
+.copy-text-input {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+.copy-text-input:focus {
+  outline: none;
+}
+.copy-text-button {
+  background-color: black;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  width: 200px;
+  height: 100%;
+  margin-left: 40px;
+  margin-top: 20px;
+  color: white;
+}
+.copy-text-button:hover {
+  background-color: rgb(36, 35, 35);
+}
+
+@media screen and (max-width: 1200px) {
+  .meeting-button {
+    margin-left: 1px;
+    width: 50px;
+  }
+  .meeting-details button i {
+    margin-left: 1px;
+  }
+  .meeting-button span {
     display: none;
-}
-.meeting-button:hover
-{
-    background: rgb(30,30,30);
-    cursor: pointer;
-}
-
-.meeting-expand
-{
-    position: fixed;
-    bottom: 85px;
-    background-color:royalblue ;
-    padding: 25px;
-    margin-left: -100px;
-}
-.meeting-head
-{
-    font-size: 25px;
-    font-weight: 600;
-}
-.meeting-id
-{
-    font-size: 20px;
-    margin-top: 10px;
-}
-.meeting-id span
-{
-    font-weight: 700;
+  }
+  .meeting-expand {
+    margin-left: -300px;
+    bottom: 90px;
+  }
 }
 
-.copy-text-input
-{
-    border: none;
-    width: 100%;
-    padding:10px;
-    margin-top: 10px;
-}
-.copy-text-input:focus
-{
-    outline: none;
-}
-.copy-text-button
-{
-    background-color:black ;
-    border: 0;
-    font-size: 18px;
-    padding: 15px;
-    width: 200px;
-    height: 100%;
-    margin-left: 40px;
-    margin-top: 20px;
-    color: white;
-}
-.copy-text-button:hover
-{
-    background-color:rgb(36, 35, 35) ;
+@media screen and (max-width: 1400px) {
+  .meeting-button {
+    margin-left: 1px;
+  }
+  .meeting-details button i {
+    margin-left: 1px;
+  }
+
+  .meeting-expand {
+    margin-left: -200px;
+    bottom: 100px;
+  }
 }
 
-@media  screen and ( max-width:1200px) {
-    .meeting-button
-    {
-        margin-left: 1px;
-        width: 50px;
-    }
-    .meeting-details button i
-    {
-        margin-left: 1px;
-    }
-    .meeting-button span
-    {
-        display: none;
-    }
-    .meeting-expand
-    {
-        margin-left: -300px;
-        bottom:90px
-    }
+@media screen and (max-width: 1000px) {
+  .meeting-button {
+    margin-left: 1px;
+    width: 50px;
+  }
+  .meeting-details button i {
+    margin-left: 1px;
+  }
+  .meeting-button span {
+    display: none;
+  }
+  .meeting-expand {
+    margin-left: -300px;
+    bottom: 130px;
+  }
 }
 
-@media  screen and ( max-width:1400px) {
-    .meeting-button
-    {
-        margin-left: 1px;
-    }
-    .meeting-details button i
-    {
-        margin-left: 1px;
-    }
-   
-    .meeting-expand
-    {
-        margin-left: -200px;
-        bottom:100px
-    }
-}
-
-@media  screen and ( max-width:1000px) {
-    .meeting-button
-    {
-        margin-left: 1px;
-        width: 50px;
-    }
-    .meeting-details button i
-    {
-        margin-left: 1px;
-    }
-    .meeting-button span
-    {
-        display: none;
-    }
-    .meeting-expand
-    {
-        margin-left: -300px;
-        bottom:130px
-    }
-}
-
-
-@media  screen and ( max-width:600px) {
-    .meeting-button
-    {
-        margin-left: 1px;
-        width: 50px;
-    }
-    .meeting-details button i
-    {
-        margin-left: 1px;
-    }
-    .meeting-button span
-    {
-        display: none;
-    }
-    .meeting-expand
-    {
-        margin-left: -300px
-    }
+@media screen and (max-width: 600px) {
+  .meeting-button {
+    margin-left: 1px;
+    width: 50px;
+  }
+  .meeting-details button i {
+    margin-left: 1px;
+  }
+  .meeting-button span {
+    display: none;
+  }
+  .meeting-expand {
+    margin-left: -300px;
+  }
 }
