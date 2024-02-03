@@ -1,0 +1,178 @@
+.register {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.register::before
+{
+  content: "";
+  position: absolute;
+  height: 2000px;
+  width: 2000px;
+  top: -10%;
+  right: 48%;
+  transform: translateY(-50%);
+  background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
+  transition: 1.8s ease-in-out;
+  border-radius: 50%;
+ 
+}
+
+.forms-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+  .forms-container form
+  {
+    align-items: center;
+    justify-content: center;
+    margin-right:200px;
+    padding: 0rem 5rem;
+    transition: all 0.2s 0.7s;
+  }
+  .forms-container-div
+  {
+    margin-top: 50px; 
+  }
+
+  .title {
+    font-size: 2.2rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .register-image
+  {
+    width: 100%;
+    transition: transform 1.1s ease-in-out;
+    transition-delay: 0.4s;
+    height: 500px;
+    margin-top: 200px;
+    margin-right: 100px;
+  }
+
+.input-register {
+    max-width: 380px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+  }
+  .input-register i {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+  }
+  
+  .input-register input
+  {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .input-register input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
+
+ 
+  .old-user
+  {
+    border:0;
+    background: 0;
+    color:#4481eb
+  }
+  .old-user:hover
+  {
+    text-decoration: underline;
+  }
+
+  .login-profile
+  {
+      height: 150px;
+  }
+   
+  .hide-form
+  {
+    display: none !important;
+  }
+
+  .hide-verify
+  {
+    visibility: hidden;
+  }
+ 
+
+  .verify
+  {
+    margin-top: 150px;
+  }
+
+  .verify input
+  {
+    outline: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    padding:20px;
+    border-radius: 30px;
+  }
+
+  .submit-register
+  {
+    width: 150px;
+    background-color: #5995fd;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .submit-register:hover {
+    background-color: #4d84e2;
+  }
+  
+
+  @media (max-width: 570px) {
+   
+  
+    .register-image {
+      display: none;
+    }
+    
+    .register{
+      padding: 1.5rem;
+    }
+  
+    .register:before {
+      bottom: 72%;
+      left: 50%;
+    }
+  
+   
+  }
