@@ -19,7 +19,7 @@ export default function ParticularRoom(props) {
   //fetch history of messages and room details
   useEffect(() => {
     //fetch details of all the messages of the room
-    axios.get(`http://localhost:5001/allMess/${roomId}`).then((data) => {
+    axios.get(`https://stealth-backend.onrender.com/allMess/${roomId}`).then((data) => {
       // console.log(data)
       if (data.data) {
         setStoredMessages(data.data.message);
@@ -27,7 +27,7 @@ export default function ParticularRoom(props) {
     });
     //fetch details of all the participants of the room
     axios
-      .get(`http://localhost:5001/roomDetails/${roomId}`)
+      .get(`https://stealth-backend.onrender.com/roomDetails/${roomId}`)
       .then((data) => {
         //console.log(data)
         setParticipants(data.data.participants);
@@ -72,7 +72,7 @@ export default function ParticularRoom(props) {
     socketInstance.current.emit("send", data);
     //post req
     axios
-      .post("http://localhost:5001/newMess", data)
+      .post("https://stealth-backend.onrender.com/newMess", data)
       .then((user) => {
         console.log("mess", user.data.message);
         const outer = document.getElementById(roomId);
@@ -148,7 +148,7 @@ export default function ParticularRoom(props) {
     };
     console.log(data);
     axios
-      .put("http://localhost:5001/rooms/leave", data)
+      .put("https://stealth-backend.onrender.com/rooms/leave", data)
       .then((success) => {
         console.log("success");
         alert("room Left sucessfully. Reload the page..!");

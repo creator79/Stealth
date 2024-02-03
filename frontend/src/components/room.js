@@ -64,7 +64,7 @@ export default function Room({ peerInstance, currentUserId, theme, setTheme }) {
     if (token) {
       setMyVideo();
       // const socket = io.connect("http://localhost:5001");
-      const socket = io.connect("http://localhost:5001", {
+      const socket = io.connect("https://stealth-backend.onrender.com", {
         transports: ["websocket", "polling"],
       });
       socketInstance.current = socket;
@@ -105,7 +105,7 @@ export default function Room({ peerInstance, currentUserId, theme, setTheme }) {
             id: incoming.peer,
           };
           //get name of user who called
-          axios.post("http://localhost:5001/api/getname", data).then((res) => {
+          axios.post("https://stealth-backend.onrender.com/api/getname", data).then((res) => {
             //console.log('here is response from axios request',res);
             const newParticipant = {
               userId: incoming.peer,

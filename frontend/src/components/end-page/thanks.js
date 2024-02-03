@@ -26,7 +26,7 @@ export default function Thanks() {
         email: sessionStorage.getItem("email"),
       };
       axios
-        .post("http://localhost:5001/feedback", data)
+        .post("https://stealth-backend.onrender.com/feedback", data)
         .then((res) => {
           console.log(res);
           console.log("Thanks for providing feedback");

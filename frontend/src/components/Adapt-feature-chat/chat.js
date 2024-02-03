@@ -52,7 +52,7 @@ export default function Chat(props) {
   useEffect(() => {
     //console.log("new socket created")
     if (!socketInstance.current) {
-      socketInstance.current = io("http://localhost:5001");
+      socketInstance.current = io("https://stealth-backend.onrender.com");
       socketInstance.current.emit("join-room", roomId);
     }
   }, []);
@@ -60,7 +60,7 @@ export default function Chat(props) {
   //get details of all rooms of the user
   useEffect(() => {
     //console.log('useEffect count',count)
-    axios.get(`http://localhost:5001/personDetails/${email}`).then((data) => {
+    axios.get(`https://stealth-backend.onrender.com/personDetails/${email}`).then((data) => {
       if (data.data) {
         //console.log(data.data.rooms)
         setRoom(data.data.rooms);
@@ -82,7 +82,7 @@ export default function Chat(props) {
     };
     //create chat room
     axios
-      .post("http://localhost:5001/createRoom", data)
+      .post("https://stealth-backend.onrender.com/createRoom", data)
       .then((res) => {
         const nw = {
           author: props.currentUserId,
@@ -91,7 +91,7 @@ export default function Chat(props) {
         //console.log(props.currentUserId);
         //create video call room
         axios
-          .post("http://localhost:5001/rooms", nw)
+          .post("https://stealth-backend.onrender.com/rooms", nw)
           .then((re) => {
             console.log("room created");
           })
@@ -127,7 +127,7 @@ export default function Chat(props) {
     };
     //join room for chat
     axios
-      .post("http://localhost:5001/join/newRoom", data)
+      .post("https://stealth-backend.onrender.com/join/newRoom", data)
       .then((res) => {
         console.log(res);
         setShowJoin(false);

@@ -28,7 +28,7 @@ export default function Register(props) {
       email,
     };
     axios
-      .post("http://localhost:5001/sendOtp", data)
+      .post("https://stealth-backend.onrender.com/sendOtp", data)
       .then((res) => {
         setSentotp(true);
       })
@@ -49,7 +49,7 @@ export default function Register(props) {
     };
 
     axios
-      .post("http://localhost:5001/api/auth/register", data)
+      .post("https://stealth-backend.onrender.com/api/auth/register", data)
       .then((res) => {
         console.log(res);
         sessionStorage.setItem("email", res.data.user.email);
@@ -70,7 +70,7 @@ export default function Register(props) {
     e.preventDefault();
 
     axios
-      .post("http://localhost:5001/resend")
+      .post("https://stealth-backend.onrender.com/resend")
       .then((res) => {
         alert("otp sent successfully");
       })

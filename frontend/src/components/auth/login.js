@@ -22,7 +22,7 @@ export default function Login(props) {
     };
 
     await axios
-      .post("http://localhost:5001/api/auth/login", data)
+      .post("https://stealth-backend.onrender.com/api/auth/login", data)
       .then((res) => {
         console.log(res);
         props.setName(res.data.user.name);
