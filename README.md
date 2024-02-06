@@ -4,7 +4,7 @@
 ## Functionalities
 
 ***
-* This is ms teams clone in which you can connect more than two people in real time. 
+* This is a Public chat app in which you can connect more than two people in real time. 
 * You can video call and chat in real time.
 * It has basic functionalities like toggle audio and video and leave call.
 * You can join meet via your teams or instant meet or using meeting Id.
@@ -52,7 +52,7 @@ In the first sprint, my focus will be on establishing the basic functionalities 
 **Sprint 2:**
 In the second sprint, I will expand the application's capabilities:
 
-- **Connect More Than 2 People:** Enhance the video conferencing feature to support multiple participants.
+- **Connect More Than 2 People:** Enhance the video conferencing feature to support multiple participants. (Dev mode)
 - **Authentication:** Implement user authentication to ensure secure access to the application.
 - **UI Design:** Focus on designing an intuitive and user-friendly interface for a seamless user experience.
 - **Send Mail:** Integrate functionality to send email notifications for various events, such as meeting invitations.

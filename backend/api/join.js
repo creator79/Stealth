@@ -6,7 +6,7 @@ module.exports=(app,rooms)=>{
     const Room=require('../room')
 
     app.get('/',(req,res)=>{
-        res.send('Welcome to Microsoft Teams ..!!!')
+        res.send('Welcome to  Teams ..!!!')
     })
 
     //create room for video call
