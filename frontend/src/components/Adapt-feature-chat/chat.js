@@ -90,18 +90,12 @@ export default function Chat(props) {
         };
         //console.log(props.currentUserId);
         //create video call room
+        
         axios
           .post("https://stealth-backend.onrender.com/rooms", nw)
           .then((re) => {
             console.log("room created");
-            history.push({
-              pathname: "/chat/" + id,
-              key: id,
-              socketInstance: socketInstance.current,
-              roomName: roomname,
-              login: login,
-              setCount: setCount,
-            });
+           
 
           })
           .catch((err) => {
