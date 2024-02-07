@@ -177,12 +177,12 @@ export default function ParticularRoom(props) {
               Members
             </Button>
           </OverlayTrigger>
-          <Button
+          {/* <Button
             variant="light"
             onClick={() => joinMeet()}
             className="join-meet">
             Join Meet
-          </Button>
+          </Button> */}
           <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
             <button variant="light" className="copy-id">
               <i class="fas fa-info-circle"></i>
